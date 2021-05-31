@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.nosto.currency.main;
+package com.nosto.internal.currency.infrastructure.external;
 
 /**
  *
  * @author angryronald
  */
-public class Currency {
-    public static void main(String[] args){
-        System.out.println("com.nosto.currency.main.Currency.main()");
-    }
+public interface ConverterExternal {
+    public ExternalCurrency Convert(ExternalCurrency source, String code) throws Exception;
 }
