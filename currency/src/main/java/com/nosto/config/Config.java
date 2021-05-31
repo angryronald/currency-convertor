@@ -59,7 +59,7 @@ public class Config {
     }
     
     public String GetExchangeRatesAPIURL(){
-        String apiUrl = "http://api.exchangeratesapi.io/v1/";
+        String apiUrl = "http://api.exchangeratesapi.io/v1";
         if (this.env.get(this.ExchangeRatesAPIURL)!= null && !this.env.get(this.ExchangeRatesAPIURL).equals("")) {
             apiUrl = this.env.get(this.ExchangeRatesAPIURL);
         }

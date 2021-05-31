@@ -61,7 +61,7 @@ public class Request extends Client implements RequestInterface {
                 response.append(inputLine);
             }
             in.close();
-            throw new Exception("Error while calling ["+method.name()+"] "+super.GenerateURL(urlPath, parameters)+": "+response.toString());
+            throw new Exception("Error while calling ["+method.name()+"] "+super.GenerateURL(urlPath, parameters).replaceAll(" ", "")+": "+response.toString());
         }
 
         con.disconnect();

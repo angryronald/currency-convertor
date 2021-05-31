@@ -45,6 +45,7 @@ public class Endpoint {
             } finally {
                 end = LocalDateTime.now();
             }
+            
             Map<Object, Object> response;
             if (httpStatus == 200)
                 response = Response.JSONWithRequestTime(result, httpStatus, info, start, end);
