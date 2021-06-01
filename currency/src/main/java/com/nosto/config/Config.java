@@ -41,7 +41,7 @@ public class Config {
     }
     
     public String GetRegisteredHost(){
-        String host = "localhost";
+        String host = "0.0.0.0";
         if (this.env.get(this.RegisteredHost)!= null && !this.env.get(this.RegisteredHost).equals("")) {
             host = this.env.get(this.RegisteredHost);
         }
