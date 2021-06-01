@@ -64,3 +64,4 @@ Change configuration can be set by set up environment variables or update config
 1. The test will focusing on testing the interface
 2. I am wholly cover the test case on the test
 3. I am not fully provided the test to reach the covered rate
+4. I am not implementing any API Caching at this rate since the currency may changes very fast.
