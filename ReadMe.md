@@ -68,4 +68,7 @@ Change configuration can be set by set up environment variables or update config
 
 ## Heroku
 1. The service also can be accessed in https://polar-ocean-02943.herokuapp.com/v1/csrf
-2. Deploying by running heroku deploy:jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+### Deploying to heroku 
+1. heroku deploy:jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
+2. using procfile and git push heroku master
