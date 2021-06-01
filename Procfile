@@ -1,1 +1,1 @@
-web: java -jar currency/target/*.jar --port 8001
+web: java -jar currency/target/*.jar --port 8080
