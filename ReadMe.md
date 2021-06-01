@@ -16,9 +16,9 @@ CurrencyConverter service for nosto.com technical test
 4. Mockito
 
 ## Test
-0. All test implement mockito and JUnit.
+0. All test implement mockito and/or JUnit.
 1. Unit test: [com.nosto.lib.csrf].CSRFTest.java
-2. Integration test: 
+2. Integration test: [com.nosto.internal.currency.infrastructure.external].ConverterExternalTest.java
 
 ## How to run 
 
@@ -41,3 +41,25 @@ Change configuration can be set by set up environment variables or update config
 ## Endpoint
 1. [GET] localhost:8000/v1/csrf: to collect csrf token
 2. [POST] http://localhost:8000/v1/convert?from=EUR&to=IDR&amount=6500&csrf={csrfToken}: to proceed conversion
+
+## Package Structure
+1. [Default Package - src/main/java]: stores Main Class (Currency.java)
+2. [com.nosto.config]: Stores Config class which manage the whole configuration data logic on which stored in environment variables but also have default value.
+3. [com.nosto.http]: Stores Route class which compile all routes from all Endpoint spreads out across domain
+4. [com.nosto.container]: Stores Container class which represents Dependency Injection Container which stores all needed dependency.
+5. [com.nosto.internal.global]: Stores Global class which may stores global variable that can be used across domain.
+6. [com.nosto.internal.currency]: Represents the Domain Boundary (Business Domain Representation) for currency inside this package will be separated into Infrastructure Layer, Domain Layer, Application Layer, and Endpoint Layer.
+7. [com.nosto.internal.currency.infrastructure]: Represents the infrastructure layer which manage the responsibility of repository, process to call another domain, process to call another external services, etc.
+8. [com.nosto.internal.currency.infrastructure.external]: Stores the Object class (ExternalCurrency) and Interface (ConverterExternal) which represents the abstraction of the process on calling other services.
+9. [com.nosto.internal.currency.infrastructure.external.http]: Stores ConverterHttp Class which is represents the implementation of ConverterExternal interface.
+10. [com.nosto.internal.currency.domain]: Stores all domain object classes.
+11. [com.nosto.internal.currency.domain.service]: Represents the package which stores all domain services package.
+12. [com.nosto.internal.currency.domain.service.currency]: Stores CurrencyService class and CurrencyServiceInterface interface. The class represents the implementation of the interface which focusing on processing object and calling infrastructure dependency and also on aggregation.
+13. [com.nosto.internal.currency.application]: Stores Application class which encapsulate all Queries and Commands classes.
+14. [com.nosto.internal.currency.application.query]: Stores queries classes which having business logic and only focusing only in reading data
+15. [com.nosto.internal.currency.application.command]: Stores commands classes which having business logic and focusing on update, insert and delete process.
+
+## Notes
+1. The test will focusing on testing the interface
+2. I am wholly cover the test case on the test
+3. I am not fully provided the test to reach the covered rate
