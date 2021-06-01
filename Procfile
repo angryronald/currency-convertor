@@ -1,1 +1,1 @@
-web: java -cp currency/target/*.jar:currency/target/* -jar currency/target/*.jar
+web: java -ls currency/target/ -cp currency/target/*.jar:currency/target/* -jar currency/target/*.jar
