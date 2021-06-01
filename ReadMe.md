@@ -40,8 +40,8 @@ Change configuration can be set by set up environment variables or update config
 4. CSRF only valid for 5 minutes, later than that the token state as invalid and remove from in-mem.
 
 ## Endpoint
-1. [GET] localhost:8081/v1/csrf: to collect csrf token
-2. [POST] http://localhost:8081/v1/convert?from=EUR&to=IDR&amount=6500&csrf={csrfToken}: to proceed conversion
+1. [GET] https://polar-ocean-02943.herokuapp.com/v1/csrf: to collect csrf token
+2. [POST] https://polar-ocean-02943.herokuapp.com/v1/convert?from=EUR&to=IDR&amount=6500&csrf={csrfToken}: to proceed conversion
 
 ## Package Structure
 1. [Default Package - src/main/java]: stores Main Class (Currency.java)
