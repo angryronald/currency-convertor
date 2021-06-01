@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.nosto.main.Currency -p 80
+web: java -cp target/classes:target/dependency/* com.nosto.main.Currency -p 80
