@@ -1,1 +1,1 @@
-web: java -cp target/classes:target/dependency/* com.nosto.main.Currency
+web: java -jar target/currency-1.0-SNAPSHOT.jar
