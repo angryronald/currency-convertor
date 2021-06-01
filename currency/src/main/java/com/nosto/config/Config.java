@@ -12,7 +12,7 @@ import java.util.Map;
  * @author angryronald
  */
 public class Config {
-    private final String ExposedPort = "EXPOSED_PORT";
+    private final String ExposedPort = "PORT";
     private final Map<String, String> env;
     private final String RegisteredHost = "REGISTERED_HOST";
     private final String ExchangeRatesAPIAccessKey = "EXCHANGERATES_API_ACCESS_KEY";
