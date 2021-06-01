@@ -1,1 +1,1 @@
-web: java -cp target/classes:target/dependency/* currency/src/main/java/com/nosto/main/Currency.java
+web: java -cp currency/target/classes:currency/target/dependency/* currency/src/main/java/com/nosto/main/Currency.java
