@@ -33,16 +33,16 @@ public class Currency {
 //        On.get("/hello").json(() -> U.map("msg", "Hello, world!"));
 //        
 //        //On.get("/x").json("x");
-//        Request client = new Request();
-//        client.AddParameter("access_key", "d774eeef0d7928e7920a53050c0623f1");
-//        client.SetBaseURL("http://api.exchangeratesapi.io/v1");
-//        ConverterHttp converter = new ConverterHttp(client);
-//        ExternalCurrency source = new ExternalCurrency("EUR",6500.0);
-//        try{
-//            ExternalCurrency result = converter.Convert(source, "IDR");
-//            System.out.println(result);
-//        } catch(Exception e) {
-//            System.out.println(e);
-//        }
+        Request client = new Request();
+        client.AddParameter("access_key", "d774eeef0d7928e7920a53050c0623f1");
+        client.SetBaseURL("http://api.exchangeratesapi.io/v1");
+        ConverterHttp converter = new ConverterHttp(client);
+        ExternalCurrency source = new ExternalCurrency("EUR",6500.0);
+        try{
+            ExternalCurrency result = converter.Convert(source, "IDR");
+            System.out.println(result);
+        } catch(Exception e) {
+            System.out.println(e);
+        }
     }
 }
