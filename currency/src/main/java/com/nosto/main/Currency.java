@@ -23,7 +23,7 @@ public class Currency {
         
         Config config = new Config();
         On.address(config.GetRegisteredHost()).port(config.GetExposedPort());
-        
+        System.out.println("Listening on "+config.GetRegisteredHost()+":"+config.GetExposedPort());
         Container container = new Container(config);
         Route.RegisterAllRoute(container);
     }
