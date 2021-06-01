@@ -27,7 +27,7 @@ CurrencyConverter service for nosto.com technical test
 2. Or also can be done by doing this comand: export JAVA_HOME=/currency/src/main/java/com/nosto/main and javac Currency.java (Since the java files is not compiled)
 
 ### Exposed port:
-Listen to port 8080 by default
+Listen to port 8081 by default
 
 ## Configuration:
 Change configuration can be set by set up environment variables or update config/config.java file.
@@ -39,8 +39,8 @@ Change configuration can be set by set up environment variables or update config
 4. CSRF only valid for 5 minutes, later than that the token state as invalid and remove from in-mem.
 
 ## Endpoint
-1. [GET] localhost:8080/v1/csrf: to collect csrf token
-2. [POST] http://localhost:8080/v1/convert?from=EUR&to=IDR&amount=6500&csrf={csrfToken}: to proceed conversion
+1. [GET] localhost:8081/v1/csrf: to collect csrf token
+2. [POST] http://localhost:8081/v1/convert?from=EUR&to=IDR&amount=6500&csrf={csrfToken}: to proceed conversion
 
 ## Package Structure
 1. [Default Package - src/main/java]: stores Main Class (Currency.java)

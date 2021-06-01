@@ -1,1 +1,1 @@
-web: java -Dserver.port=8080 -jar currency/target/*.jar
+web: java -Dhttp.port=8081 -jar currency/target/*.jar

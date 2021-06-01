@@ -23,12 +23,12 @@ public class Config {
     }
     
     public Integer GetExposedPort(){ 
-        String portInString = "8080";
+        String portInString = "8081";
         if (this.env.get(this.ExposedPort)!= null && !this.env.get(this.ExposedPort).equals("")) {
             portInString = this.env.get(this.ExposedPort);
         }
         
-        Integer port = 8080;
+        Integer port = 8081;
         try {
             port = Integer.parseInt(portInString);
         } catch(Exception e) {
