@@ -8,17 +8,13 @@ package com.nosto.internal.currency.infrastructure.external;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 import com.nosto.internal.currency.infrastructure.external.http.ConverterHttp;
 import com.nosto.lib.http.Request;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 /**
  *
  * @author angryronald
  */
 public class ConverterExternalTest {
-    @Mock
     private ConverterExternal converterExternal;
     
     @Before

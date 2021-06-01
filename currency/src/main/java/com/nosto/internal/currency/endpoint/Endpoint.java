@@ -9,7 +9,6 @@ import com.nosto.internal.currency.application.Application;
 import com.nosto.lib.http.Response;
 import java.time.LocalDateTime;
 import java.util.Map;
-import org.rapidoid.job.Jobs;
 import org.rapidoid.setup.On;
 import com.nosto.lib.http.Middleware;
 import com.nosto.lib.csrf.CSRFException;

@@ -5,7 +5,6 @@
  */
 package com.nosto.lib.http;
 
-import java.net.http.HttpResponse;
 import java.util.Map;
 
 /**

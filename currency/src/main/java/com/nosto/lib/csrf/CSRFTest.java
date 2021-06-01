@@ -5,10 +5,8 @@
  */
 package com.nosto.lib.csrf;
 
-import com.nosto.lib.csrf.CSRF;
 import java.time.LocalDateTime;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 

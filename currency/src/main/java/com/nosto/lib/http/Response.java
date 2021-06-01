@@ -8,7 +8,6 @@ package com.nosto.lib.http;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
-import org.rapidoid.u.U;
 import java.util.Map;
 
 /**
