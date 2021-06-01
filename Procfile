@@ -1,1 +1,1 @@
-web: java -cp currency/target/classes currency/src/main/java/com/nosto/main/Currency.java
+web: java -jar currency/target/currency-1.0-SNAPSHOT.jar
