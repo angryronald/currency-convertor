@@ -24,7 +24,7 @@ CurrencyConverter service for nosto.com technical test
 
 ### To run the service:
 1. Since this project is develop using netbeans, It can be simply by click run button
-2. Or also can be done by doing this comand: export JAVA_HOME=/currency/src/main/java and javac Currency.java (Since the java files is not compiled)
+2. Or also can be done by doing this comand: export JAVA_HOME=/currency/src/main/java/com/nosto/main and javac Currency.java (Since the java files is not compiled)
 
 ### Exposed port:
 Listen to port 80 by default
