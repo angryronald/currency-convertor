@@ -1,1 +1,1 @@
-web: java -Dhttp.port=$PORT -jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
+web: java -Dserver.port=$PORT -jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
