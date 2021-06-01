@@ -1,1 +1,1 @@
-web: java -Dhttp.port=${PORT:8081} -jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
+web: java -Dhttp.port=$PORT -jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
