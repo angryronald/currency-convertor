@@ -63,13 +63,12 @@ Change configuration can be set by set up environment variables or update config
 
 ## Notes
 1. The test will focusing on testing the interface
-2. I am wholly cover the test case on the test
-3. I am not fully provided the test to reach the covered rate
+2. The test that provided above just to show you about the unit test and integration test and not cover the whole test case.
+3. The test and the test case can be added to have a better coverage of the source code
 4. I am not implementing any API Caching at this rate since the currency may changes very fast.
 
 ## Heroku
 1. The service also can be accessed in https://polar-ocean-02943.herokuapp.com/v1/csrf
 
 ### Deploying to heroku 
-1. heroku deploy:jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
-2. using procfile and git push heroku master
+1. using procfile and git push heroku master
