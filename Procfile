@@ -1,1 +1,1 @@
-web: java -jar currency/target/currencyconverter-1.0-SNAPSHOT-jar-with-dependencies.jar
+web: java -jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
