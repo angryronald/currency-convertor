@@ -49,8 +49,6 @@ public class Response {
         result.put("info", info);
         result.put("metadata", metadata);
         
-        System.err.println("Error: "+info);
-        
         return result;
     }
 }

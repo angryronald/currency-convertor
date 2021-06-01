@@ -27,9 +27,9 @@ public class ConverterHttp implements ConverterExternal {
     public ExternalCurrency Convert(ExternalCurrency source, String code) throws Exception{
         String urlPath = "/convert";
         Map<String, String> parameters = new HashMap<String, String>();
-        parameters.put("from", source.GetCode());
+        parameters.put("from", source.getCode());
         parameters.put("to", code);
-        parameters.put("amount", source.GetAmount().toString());
+        parameters.put("amount", source.getAmount().toString());
         
         String response = this.client.DoRequest(Method.GET, urlPath, parameters, new HashMap<String, String>());
         JSONObject jsonObject = new JSONObject(response);

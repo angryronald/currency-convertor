@@ -22,11 +22,11 @@ public class CurrencyService implements CurrencyServiceInterface {
     public Currency Convert(Currency source, String targetCode) throws Exception {
         Currency result = null;
         try {
-           ExternalCurrency externalSource = new ExternalCurrency(source.GetCode(), source.GetAmount());
+           ExternalCurrency externalSource = new ExternalCurrency(source.getCode(), source.getAmount());
            ExternalCurrency externalResult = this.ConverterService.Convert(externalSource, targetCode);
            
-           if (result != null) {
-               result = new Currency(externalResult.GetCode(), externalResult.GetAmount());
+           if (externalResult != null) {
+               result = new Currency(externalResult.getCode(), externalResult.getAmount());
            } 
         } catch (Exception e) {
             throw e;

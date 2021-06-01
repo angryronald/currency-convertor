@@ -11,6 +11,8 @@ import java.time.LocalDateTime;
 import java.util.Map;
 import org.rapidoid.job.Jobs;
 import org.rapidoid.setup.On;
+import com.nosto.lib.http.Middleware;
+import com.nosto.lib.csrf.CSRFException;
 /**
  *
  * @author angryronald
@@ -26,19 +28,59 @@ public class Endpoint {
     public void RegisterConvertMethod(){
         On.post("/v1/convert").json((req, resp) -> {
             LocalDateTime start = LocalDateTime.now();
-            String from = req.param("from");
+            Map<String, String> queryParams = req.params();
+            
+            String from = "";
+            if (queryParams.containsKey("from")){
+                from = queryParams.get("from");
+            }
+            
             String to = req.param("to");
-            Double amount = Double.parseDouble(req.param("amount"));
+            if (queryParams.containsKey("to")){
+                to = queryParams.get("to");
+            }
+            
+            Double amount = 0.0;
+            if (queryParams.containsKey("amount") && queryParams.get("amount") != ""){
+                amount = Double.parseDouble(queryParams.get("amount"));
+            }
+            
+            String csrfToken = "";
+            if (queryParams.containsKey("csrf")){
+                csrfToken = queryParams.get("csrf");
+            }
+            
             Object result = new Object();
             int httpStatus = 0;
             String info = "";
             LocalDateTime end;
+            
+            if (from == "") {
+                httpStatus = 400;
+                info = "Bad Request";
+                result = "'from' is mandatory field";
+                return Response.Error(result, httpStatus, info);
+            }
+            
+            if (to == ""){
+                httpStatus = 400;
+                info = "Bad Request";
+                result = "'to' is mandatory field";
+                return Response.Error(result, httpStatus, info);
+            }
+            
             try
             {
-                result = this.application.getConvertCurrencyCommand().Execute(from, to, amount);
-                httpStatus = 200;
-                info = "ok";
-            } catch (Exception e) {
+                if (Middleware.IsCSRFValid(csrfToken)){
+                    result = this.application.getConvertCurrencyCommand().Execute(from, to, amount);
+                    httpStatus = 200;
+                    info = "ok";
+                }
+            } catch(CSRFException e){
+                result = e.getMessage();
+                info = "Bad Request";
+                httpStatus = 400;
+            }catch (Exception e) {
                 result = e.getMessage();
                 info = "Unprocessable Entity";
                 httpStatus = 422;

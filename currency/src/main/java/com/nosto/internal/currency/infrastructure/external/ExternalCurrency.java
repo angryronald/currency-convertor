@@ -18,19 +18,19 @@ public class ExternalCurrency {
         this.Amount = amount;
     }
     
-    public void SetCode(String code) {
+    public void setCode(String code) {
         this.Code = code;
     }
     
-    public void SetAmount(Double amount) {
+    public void setAmount(Double amount) {
         this.Amount = amount;
     }
     
-    public String GetCode() {
+    public String getCode() {
         return this.Code;
     }
     
-    public Double GetAmount() {
+    public Double getAmount() {
         return this.Amount;
     }
 }
