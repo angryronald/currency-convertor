@@ -1,6 +1,5 @@
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/csrf/CSRFHandler.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/csrf/CSRFIsEmptyException.java
-/home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/Currency.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/csrf/CSRF.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/infrastructure/external/http/ConverterHttp.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/http/Response.java
@@ -8,6 +7,7 @@
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/container/Container.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/http/Route.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/http/Request.java
+/home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/main/Currency.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/endpoint/Endpoint.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/http/RequestInterface.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/http/Middleware.java

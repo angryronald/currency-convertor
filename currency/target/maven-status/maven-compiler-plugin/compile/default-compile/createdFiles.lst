@@ -3,6 +3,7 @@ com/nosto/internal/currency/infrastructure/external/ConverterExternal.class
 com/nosto/internal/currency/domain/service/currency/CurrencyService.class
 com/nosto/internal/currency/domain/service/currency/CurrencyServiceInterface.class
 com/nosto/lib/csrf/CSRFException.class
+com/nosto/main/Currency.class
 com/nosto/internal/currency/endpoint/Endpoint.class
 com/nosto/lib/http/Middleware.class
 com/nosto/lib/http/Method.class
@@ -21,7 +22,6 @@ com/nosto/lib/http/Client.class
 com/nosto/lib/csrf/CSRFIsEmptyException.class
 com/nosto/lib/csrf/CSRFHandler.class
 com/nosto/container/Container.class
-Currency.class
 com/nosto/internal/global/Global.class
 com/nosto/lib/http/RequestInterface.class
 com/nosto/internal/currency/application/Application.class
