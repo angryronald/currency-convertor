@@ -7,13 +7,10 @@ package com.nosto.lib.http;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.BufferedReader;
-import java.net.http.HttpResponse;
 import java.util.Map;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
-import java.net.URI;
 import java.net.URL;
 
 /**
