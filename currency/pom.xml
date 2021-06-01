@@ -14,8 +14,8 @@
     </properties>
     <build>
         <plugins>
-            <plugin>
-                <!-- Build an executable JAR -->
+<!--            <plugin>
+                 Build an executable JAR 
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.1.0</version>
@@ -25,11 +25,11 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>com.nosto.main.Currency</mainClass>
-                            <!--<mainClass>currency/src/main/java/com/nosto/main/Currency.java</mainClass>-->
+                            <mainClass>currency/src/main/java/com/nosto/main/Currency.java</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>

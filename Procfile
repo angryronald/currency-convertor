@@ -1,1 +1,1 @@
-web: java -cp currency/target/classes:currency/target/dependency/* com.nosto.main.Currency --port=8081
+web: java -Dhttp.port=8081 -jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
