@@ -27,7 +27,7 @@ CurrencyConverter service for nosto.com technical test
 2. Or also can be done by doing this comand: export JAVA_HOME=/currency/src/main/java and javac Currency.java (Since the java files is not compiled)
 
 ### Exposed port:
-Listen to port 8000 by default
+Listen to port 80 by default
 
 ## Configuration:
 Change configuration can be set by set up environment variables or update config/config.java file.
