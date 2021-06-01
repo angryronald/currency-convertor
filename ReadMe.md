@@ -58,7 +58,7 @@ Change configuration can be set by set up environment variables or update config
 13. [com.nosto.internal.currency.application]: Stores Application class which encapsulate all Queries and Commands classes.
 14. [com.nosto.internal.currency.application.query]: Stores queries classes which having business logic and only focusing only in reading data
 15. [com.nosto.internal.currency.application.command]: Stores commands classes which having business logic and focusing on update, insert and delete process.
-16. [com.nosto.lib]: Stores all internal classes (internal library)
+16. [com.nosto.lib]: Stores all internal classes (internal library) which doesn't relate with business logic and can be use across domain
 
 ## Notes
 1. The test will focusing on testing the interface
