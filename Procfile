@@ -1,1 +1,1 @@
-web: java -cp target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar:target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar -jar target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
+web: java -cp currency/target/*.jar:currency/target/* -jar currency/target/currency-1.0-SNAPSHOT-jar-with-dependencies.jar
