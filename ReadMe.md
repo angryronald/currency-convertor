@@ -65,3 +65,7 @@ Change configuration can be set by set up environment variables or update config
 2. I am wholly cover the test case on the test
 3. I am not fully provided the test to reach the covered rate
 4. I am not implementing any API Caching at this rate since the currency may changes very fast.
+
+## Heroku
+1. The service also can be accessed in https://polar-ocean-02943.herokuapp.com/v1/csrf
+2. Still under setup, having error H10 = "App crashed"
