@@ -1,1 +1,1 @@
-web: java -cp currency/target/*.jar:currency/target/* -jar currency/target/*.jar
+web: java -jar currency/target/*.jar --port=8001
