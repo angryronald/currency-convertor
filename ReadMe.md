@@ -1,7 +1,7 @@
 # CurrencyConverter
 
 ## Description
-CurrencyConverter service for nosto.com technical test
+Currency Converter service
 
 ### Code Style
 1. SOLID Principle
