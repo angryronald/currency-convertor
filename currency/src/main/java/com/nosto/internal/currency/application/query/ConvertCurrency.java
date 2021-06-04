@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.nosto.internal.currency.application.Query;
+package com.nosto.internal.currency.application.query;
 
 import com.nosto.internal.currency.domain.service.currency.CurrencyServiceInterface;
 import com.nosto.internal.currency.domain.Currency;

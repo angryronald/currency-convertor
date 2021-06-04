@@ -9,7 +9,7 @@ import com.nosto.lib.http.Request;
 import com.nosto.internal.currency.infrastructure.external.http.ConverterHttp;
 import com.nosto.internal.currency.domain.service.currency.CurrencyService;
 import com.nosto.internal.currency.application.Application;
-import com.nosto.internal.currency.application.Query.ConvertCurrency;
+import com.nosto.internal.currency.application.query.ConvertCurrency;
 import com.nosto.internal.currency.endpoint.Endpoint;
 import com.nosto.config.Config;
 

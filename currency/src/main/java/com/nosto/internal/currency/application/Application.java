@@ -5,7 +5,7 @@
  */
 package com.nosto.internal.currency.application;
 
-import com.nosto.internal.currency.application.Query.ConvertCurrency;
+import com.nosto.internal.currency.application.query.ConvertCurrency;
 /**
  *
  * @author angryronald
