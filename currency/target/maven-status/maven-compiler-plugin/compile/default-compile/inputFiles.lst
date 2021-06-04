@@ -3,6 +3,7 @@
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/csrf/CSRF.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/infrastructure/external/http/ConverterHttp.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/http/Response.java
+/home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/application/query/ConvertCurrency.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/csrf/CSRFTest.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/container/Container.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/http/Route.java
@@ -20,7 +21,6 @@
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/domain/service/currency/CurrencyServiceInterface.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/config/Config.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/lib/http/Method.java
-/home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/application/Query/ConvertCurrency.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/infrastructure/external/ConverterExternalTest.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/Constant.java
 /home/angryronald/NetBeansProjects/currencyconverter/currency/src/main/java/com/nosto/internal/currency/infrastructure/external/ExternalCurrency.java

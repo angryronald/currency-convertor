@@ -14,7 +14,6 @@ com/nosto/http/Route.class
 com/nosto/lib/http/Response.class
 com/nosto/lib/csrf/CSRFTest.class
 com/nosto/internal/currency/infrastructure/external/ExternalCurrency.class
-com/nosto/internal/currency/application/Query/ConvertCurrency.class
 com/nosto/internal/currency/Constant.class
 com/nosto/lib/http/Request.class
 com/nosto/config/Config.class
@@ -24,5 +23,6 @@ com/nosto/lib/csrf/CSRFHandler.class
 com/nosto/container/Container.class
 com/nosto/internal/global/Global.class
 com/nosto/lib/http/RequestInterface.class
+com/nosto/internal/currency/application/query/ConvertCurrency.class
 com/nosto/internal/currency/application/Application.class
 com/nosto/internal/currency/infrastructure/external/http/ConverterHttp.class
