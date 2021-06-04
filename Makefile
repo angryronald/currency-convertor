@@ -1,3 +1,5 @@
+ARGS	?=
+PORT	?= 8081
 IMAGE   :=  currency-converter
 VERSION :=  $(shell git describe --tags --always --dirty)
 
@@ -7,4 +9,4 @@ docker: Dockerfile
 
 run-docker: .run-docker
 .run-docker:
-	docker run -it --rm -p 8081:8081 $(IMAGE):$(VERSION)
+	docker run -it --rm -p $(PORT):$(PORT) $(ARGS)

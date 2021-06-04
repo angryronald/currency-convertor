@@ -11,4 +11,4 @@ COPY /target/currencyconverter-1.0-SNAPSHOT-jar-with-dependencies.jar /exec
 
 FROM tomcat:jdk11-corretto
 
-CMD ["java", "-jar exec/currency-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+CMD ["java -jar exec/currency-1.0-SNAPSHOT-jar-with-dependencies.jar"]
